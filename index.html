@@ -8,24 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 body.dark-mode {
   
   background-color: black;
@@ -126,8 +108,7 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="projects" class="w3-bar-item w3-button dropdown"><i class="fa fa-wrench"></i> PROJECTS</a>
-      <div class="dropdown-content"><a href="heartstring">Heartstring</a></div>
+      <a href="projects" class="w3-bar-item w3-button"><i class="fa fa-wrench"></i> PROJECTS</a>
       <a href="https://discord.gg/M7aMdPZ" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-user"></i> SUPPORT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -141,8 +122,8 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
     <a href="https://discord.gg/M7aMdPZ" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">SUPPORT</a>
 </nav>
 
