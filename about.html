@@ -135,3 +135,32 @@ body, html {
 I'm cyliim and I program. For over a year now, I've been interested in, and doing, programming. <br>My interest was sparked back in 2015, when I was introduced to HTML by one of my friends, and was hooked. Ever since then, I was making small webpage projects, and eventually moved on to Scratch. Then I discovered Discord. I was fascinated by all of the bots I saw, how they worked, and everything else about them. I decided I wanted to make my own. This, over the course of months, got me to where I am today.</p>
   </p>
   </center>
+  <script>
+  function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+  </body>
+</html>
