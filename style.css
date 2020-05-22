@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-weight: 500;
+  font-family: "Helvetica";
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #0080FF;
+  height: 100vh;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("https://cdn.glitch.com/de4d94d3-7979-4904-8198-a53bd85f0d8a%2Fsg.jpg?1558642176077");
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #C3CAD9;
+}
+
+footer {
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #373B44;
+  color: white;
+
+  a {
+    color: #FE4B74;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.about {
+  background-color: #3c3c3c;
+  height: 100vh;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.projects {
+  background-color: #aaaaaa;
+  color: black;
+}
+.nav {
+  background-color: 111111;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column27 {
+  float: left;
+  width: 33.3333333333333333333333333%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row27 {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row27:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column27 {
+    width: 95%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card27 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: c; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 75%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer {
+  background-color: #373b44;
+}
+.projectHeader {
+  height: 10vh;
+  background-color: #333;
+  color: white;
+}
+.eth {
+  background-image: url("https://cdn.glitch.com/fd4bb24c-d623-459d-8e33-fab65ec07286%2F085081683_prevstill.jpeg?v=1564901005860");
+  height: 50vh;
+  position: relative;
+}
+.dad {
+  background-color: #3c3c3c;
+  height: 50vh;
+  background-image: url("https://cdn.glitch.com/adbb1a2f-de55-4de8-bcef-4445a8af6814%2Fimage.png?v=1555734842298");
+  width: 100%;
+
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.ethArrow {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 30px;
+}
+.desc {
+  margin-left: 2%;
+  font-size: 30px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+.clap {
+  background-color: #3c3c3c;
+  height: 50vh;
+  background-image: url("https://cdn.glitch.com/fd4bb24c-d623-459d-8e33-fab65ec07286%2Fclap-emoji-by-twitter.png?v=1565134386191");
+}
+.dadArrow {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 30px;
+}
