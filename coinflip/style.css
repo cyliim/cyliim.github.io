@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    border: 5px solid white;
+    background-color: #f8f8f8;
+    color: black;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    ;
+}
+
+.leftSide {
+    float: left;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.rightSide {
+    float: right;
+    text-align: center;
+    margin-right: 25%;
+    margin-top: 10%;
+}
