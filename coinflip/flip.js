@@ -5,5 +5,5 @@ function logIterations() {
         Math.floor(Math.random() * 2) + 1 == 1 ? ++heads : ++tails
     }
     document.getElementById("output").innerHTML = `${heads} heads | ${tails} tails`
-    document.getElementById("percentage").innerHTML = `${Math.trunc((heads / num) * 100)}% heads | ${(tails / num) * 100)}% tails`
+    document.getElementById("percentage").innerHTML = `${(heads / num) * 100)}% heads | ${(tails / num) * 100)}% tails`
 }
