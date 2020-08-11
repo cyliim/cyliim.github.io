@@ -1,5 +1,16 @@
+if( typeof Element.prototype.clearChildren === 'undefined' ) {
+    Object.defineProperty(Element.prototype, 'clearChildren', {
+      configurable: true,
+      enumerable: false,
+      value: function() {
+        while(this.firstChild) this.removeChild(this.lastChild);
+      }
+    });
+}
+
+document.getElementById("output1").innerhtml = ' '
+
 async function start() {
-    document.getElementById("output1").innerhtml = ' '
     let x = JSON.parse(document.getElementById("first").value)
     let y = JSON.parse(document.getElementById("second").value)
 
